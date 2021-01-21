@@ -13,11 +13,17 @@ use think\facade\View;
  */
 class Group extends AdminBase
 {
+    /**
+     * @return string
+     */
     public function index()
     {
         return View::fetch();
     }
 
+    /**
+     * @return string|\think\response\Json
+     */
     public function edit()
     {
         $id = input("param.id", null, "intval");
@@ -40,11 +46,17 @@ class Group extends AdminBase
         ]);
     }
 
+    /**
+     *
+     */
     public function update()
     {
 
     }
 
+    /**
+     * @return \think\response\Json
+     */
     public function groupJson()
     {
         $page = $this->request->param("page", 1, "intval");
