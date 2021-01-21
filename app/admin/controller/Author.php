@@ -8,6 +8,7 @@ use app\admin\business\Author as AuthorBus;
 use think\facade\View;
 
 /**
+ * 权限路由
  * Class Author
  * @package app\admin\controller
  */
