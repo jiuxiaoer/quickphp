@@ -66,7 +66,6 @@ class  Login extends AdminBase
         try {
             $res = \app\admin\business\AdminUser::login($data);
         } catch (\Exception $e) {
-            halt($e->getMessage());
             return show_json(config("status.error"), $e->getMessage());
         }
         if ($res) {

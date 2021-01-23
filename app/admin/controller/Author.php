@@ -159,7 +159,7 @@ class Author extends AdminBase
         }
         try {
             (new AuthorBus())->updateById($data["id"], $data);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             return show_json(config("status.error"), $e->getMessage());
         }
         return show_json(config("status.success"), "OK");

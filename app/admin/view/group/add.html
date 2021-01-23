@@ -10,7 +10,6 @@
 </head>
 <body>
 <form class="layui-form layui-form-pane ok-form" lay-filter="lotus-edit-filter">
-    <input type="hidden" name="id">
     <div class="layui-form-item">
         <label class="layui-form-label">角色名</label>
         <div class="layui-input-block">
@@ -48,13 +47,6 @@
             form = layui.form,
             layer = layui.layer
         ;
-        var dataGRoup = {
-            "id": "{$data.id}",
-            'title': "{$data.title}",
-            "status": "{$data.status}",
-            "rules": "{$data.rules}"
-        }
-        form.val("lotus-edit-filter", dataGRoup);
         $.ajax({
             url: "{:url('admin/author/menu')}",
             type: "post",
@@ -68,13 +60,11 @@
                     data: data,
                     id: "id",
                 });
-                console.log(dataGRoup.rules = dataGRoup.rules.split(","))
-                tree.setChecked('id', dataGRoup.rules);
             }
         });
         form.on('submit(edit)', function (data) {
             $.ajax({
-                url: "{:url('update')}",
+                url: "{:url('save')}",
                 type: "post",
                 dataType: "json",
                 data: data.field,
