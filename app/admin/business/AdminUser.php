@@ -10,10 +10,17 @@ namespace app\admin\business;
 use think\Exception;
 use think\facade\Log;
 use think\facade\Session;
-
+use app\common\model\mysql\AdminUser as adminUserModel;
 
 class AdminUser
 {
+    private $adminUserModel = null;
+
+    public function __construct()
+    {
+        $this->adminUserModel = new adminUserModel();
+    }
+
     /**
      * 后台登录逻辑校验
      * @param $data
@@ -84,4 +91,29 @@ class AdminUser
         return $adminUser;
     }
 
+    /***
+     * 获取用户json数据
+     * @param $field
+     * @param $limit
+     * @return array|\think\Paginator
+     */
+    public function getUsers($field, $limit)
+    {
+        $res = $this->adminUserModel->getUsers($field, $limit);
+        foreach ($res as &$v) {
+            $v->role = $this->adminUserModel->getRole($v->id);
+        }
+        if (!$res) {
+            $res = [];
+        }
+        $total = $res->total();
+        $items = $res->items();
+        $res = [
+            'code' => 0,
+            'msg' => "",
+            'count' => $total,
+            'data' => $items
+        ];
+        return $res;
+    }
 }

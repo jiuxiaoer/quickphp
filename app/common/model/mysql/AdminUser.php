@@ -7,8 +7,6 @@ use think\Model;
 
 class AdminUser extends MysqlBase
 {
-
-
     /**
      * 根据用户名获取数据
      * @param $username
@@ -29,5 +27,28 @@ class AdminUser extends MysqlBase
         return $res;
     }
 
+    public function getUsers($field = "*", $limit)
+    {
+        $where = [
+            "status" => config("status.mysql.table_normal")
+        ];
+        $order = [
+            "id" => "asc"
+        ];
+        $res = $this->where($where)->field($field)->order($order)->paginate($limit);
+        return $res;
+    }
+
+    public function getRole($uid)
+    {
+        try {
+            $gid = AuthGroupAccess::where('uid', $uid)->find()->group_id;
+            $title = AuthGroup::where('id', $gid)->find()->title;
+            return $title;
+        } catch (\Exception $e) {
+            return '此用户未授予角色';
+        }
+
+    }
 
 }

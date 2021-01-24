@@ -5,7 +5,7 @@ namespace app\common\model\mysql;
 class AuthGroup extends MysqlBase
 {
 
-    public function getAuthGroup($field = "*", $limit)
+    public function getGruops($field = "*", $limit)
     {
         $where = [
             "status" => config("status.mysql.table_normal")

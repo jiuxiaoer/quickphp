@@ -74,6 +74,12 @@ class Author
         return $res;
     }
 
+    /**
+     * 通过id删除权限
+     * @param $id
+     * @return array|\think\Model|null
+     * @throws \think\Exception
+     */
     public function deleteById($id)
     {
         try {
@@ -92,9 +98,9 @@ class Author
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    public function getAuthJson($field)
+    public function getAuths($field)
     {
-        $res = $this->authRuleModel->getAuthRuleJson($field);
+        $res = $this->authRuleModel->getAuths($field);
         if (!$res) {
             $res = [];
         }
@@ -111,7 +117,7 @@ class Author
      */
     public function getMenuJson($field)
     {
-        $res = $this->authRuleModel->getAuthRuleJson($field);
+        $res = $this->authRuleModel->getAuths($field);
         if (!$res) {
             $res = [];
         }

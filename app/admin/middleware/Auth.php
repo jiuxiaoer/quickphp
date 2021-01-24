@@ -25,7 +25,6 @@ class Auth
             dump(empty(Session::get(config("admin.admin_session"))));
             return redirect((string)url("login/index"));
         }
-
         $res = $next($request);
         //后置中间件
         return $res;

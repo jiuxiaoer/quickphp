@@ -7,6 +7,7 @@ use app\admin\business\Group as GroupBus;
 use think\facade\View;
 
 /**
+ * 用户组
  * Auther: yinshen
  * url:https://www.79xj.cn
  * 创建时间：2021/1/19 19:22
@@ -21,10 +22,19 @@ class Group extends AdminBase
         return View::fetch();
     }
 
+    /**
+     * 用户添加视图
+     * @return string
+     */
     public function add()
     {
         return View::fetch();
     }
+
+    /**
+     * 用户删除api
+     * @return \think\response\Json
+     */
     public function delete()
     {
         $id = input("param.id", null, "intval");
@@ -42,6 +52,11 @@ class Group extends AdminBase
         }
         return show_json(config("status.success"), "OK");
     }
+
+    /**
+     * 用户添加api
+     * @return \think\response\Json
+     */
     public function save()
     {
         if (!$this->request->isPost()) {
@@ -77,6 +92,7 @@ class Group extends AdminBase
     }
 
     /**
+     * 用户编辑视图
      * @return string|\think\response\Json
      */
     public function edit()
@@ -101,8 +117,9 @@ class Group extends AdminBase
         ]);
     }
 
-    /**
-     *
+    /***
+     * 用户更新api
+     * @return \think\response\Json
      */
     public function update()
     {
@@ -138,6 +155,7 @@ class Group extends AdminBase
     }
 
     /**
+     * 用户组api
      * @return \think\response\Json
      */
     public function groupJson()
@@ -145,10 +163,9 @@ class Group extends AdminBase
         $page = $this->request->param("page", 1, "intval");
         $limit = $this->request->param("limit", 10, "intval");
         try {
-            $data = (new GroupBus())->getGruopJson("id,title,status", $limit);
+            $data = (new GroupBus())->getGruops("id,title,status", $limit);
         } catch (\Exception $e) {
             $data = [];
-            echo $e->getMessage();
         }
         return json($data);
     }

@@ -20,7 +20,7 @@ class AuthRule extends MysqlBase
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    public function getAuthRuleJson($field = "*")
+    public function getAuths($field = "*")
     {
         $where = [
             "status" => config("status.mysql.table_normal")

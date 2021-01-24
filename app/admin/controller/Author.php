@@ -28,13 +28,17 @@ class Author extends AdminBase
      */
     public function add()
     {
-        $res = (new AuthorBus())->getAuthJson("id,title,pid");
+        $res = (new AuthorBus())->getAuths("id,title,pid");
         $data = array2Level($res);
         return View::fetch("", [
             "author" => $data
         ]);
     }
 
+    /***
+     * 删除api
+     * @return \think\response\Json
+     */
     public function delete()
     {
         $id = input("param.id", null, "intval");
@@ -112,7 +116,7 @@ class Author extends AdminBase
         }
         try {
             $data = (new AuthorBus())->getAuthorRuleById($id, "id,title,href,icon,pid,sort,status,type");
-            $res = (new AuthorBus())->getAuthJson("id,title,pid");
+            $res = (new AuthorBus())->getAuths("id,title,pid");
             $auth = array2Level($res);
         } catch (\Exception $e) {
             $data = [];
@@ -125,6 +129,10 @@ class Author extends AdminBase
         ]);
     }
 
+    /***
+     * 更新api
+     * @return \think\response\Json
+     */
     public function update()
     {
         if (!$this->request->isPost()) {
@@ -172,7 +180,7 @@ class Author extends AdminBase
     public function authJson()
     {
         try {
-            $data = (new AuthorBus())->getAuthJson("id,title,icon,type,pid,status,sort,create_time,update_time");
+            $data = (new AuthorBus())->getAuths("id,title,icon,type,pid,status,sort,create_time,update_time");
         } catch (\Exception $e) {
             $data = [];
         }
