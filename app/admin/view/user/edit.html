@@ -21,69 +21,36 @@
 
     <div class="layui-form-item">
         <label class="layui-form-label">
-            上级权限
+            角色分配
         </label>
         <div class="layui-input-block">
-            <select lay-filter="aihao" name="pid">
-                <option value="0">顶级权限</option>
-                {volist name='author' id='vo'}
-                <option value="{$vo.id}">{$vo.level-1|str_repeat='丨--',###}{$vo.title}</option>
+            <select name="group_id">
+                <option value="0"></option>
+                {volist name='group' id='vo'}
+                <option value="{$vo.id}">{$vo.title}</option>
                 {/volist}
             </select>
         </div>
     </div>
 
     <div class="layui-form-item">
-        <label class="layui-form-label">权限名称</label>
+        <label class="layui-form-label">用户名</label>
         <div class="layui-input-block">
-            <input type="text" name="title" lay-verify="required" autocomplete="off" class="layui-input">
+            <input type="text" name="name" lay-verify="required" autocomplete="off" class="layui-input">
         </div>
     </div>
 
     <div class="layui-form-item">
-        <label class="layui-form-label">路由</label>
+        <label class="layui-form-label">用户密码</label>
         <div class="layui-input-block">
-            <input type="text" name="href" placeholder="例如:/admin/user/userList" value=""
+            <input type="password" name="password" value=""
                    autocomplete="off" class="layui-input">
         </div>
     </div>
-
-
     <div class="layui-form-item">
-        <label class="layui-form-label"><a target="_blank" href="https://www.layui.com/doc/element/icon.html#table">图标(点)</a></label>
+        <label class="layui-form-label">手机号</label>
         <div class="layui-input-block">
-            <input type="text" id="iconPicker" name="icon" value="layui-icon-cellphone" lay-filter="iconPicker"
-                   style="display: none;">
-        </div>
-    </div>
-
-    <div class="layui-form-item">
-        <label class="layui-form-label">排序权重</label>
-        <div class="layui-input-block">
-            <input type="number" value="0" name="sort" lay-verify="required" autocomplete="off" class="layui-input">
-        </div>
-    </div>
-
-    <div class="layui-form-item">
-        <label class="layui-form-label">
-            状态
-        </label>
-        <div class="layui-input-block">
-            <select lay-filter="aihao" name="status">
-                <option value="1">显示</option>
-                <option value="-1">隐藏</option>
-            </select>
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label">
-            类型
-        </label>
-        <div class="layui-input-block">
-            <select lay-filter="aihao" name="type">
-                <option value="0">目录</option>
-                <option value="1">功能</option>
-            </select>
+            <input type="number" value="0" name="phone" lay-verify="required" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div>{:token_field()}</div>
@@ -100,33 +67,15 @@
 <script>
     layui.use(['form', "iconPicker", "jquery"], function () {
         var form = layui.form,
-            iconPicker = layui.iconPicker,
             $ = layui.jquery;
+
         var data = {
             "id": "{$data.id}",
-            'title': "{$data.title}",
-            "pid": "{$data.pid}",
-            'icon': "{$data.icon}",
-            'sort': "{$data.sort}",
-            'href': "{$data.href}",
-            'status': "{$data.status}",
-            'type': "{$data.type}",
+            'name': "{$data.name}",
+            "phone": "{$data.phone}",
+            "group_id": "{$data.group_id}",
         };
         form.val("lotus-edit-filter", data);
-        iconPicker.render({
-            elem: '#iconPicker',
-            type: 'fontClass',
-            search: true,
-            page: false,
-            limit: 16,
-            click: function (data) {
-                console.log(data);
-            },
-            success: function (d) {
-                console.log(d);
-            }
-        });
-
         form.on('submit(save)', function (data) {
             $.ajax({
                 url: '{:url("update")}',

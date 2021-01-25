@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>用户管理</title>
-    <link rel="stylesheet" href="{_STATIC_PATH}component/pear/css/pear.css" />
+    <link rel="stylesheet" href="{_STATIC_PATH}component/pear/css/pear.css"/>
     <style>
 
     </style>
@@ -63,12 +63,15 @@
 </script>
 
 <script type="text/html" id="user-bar">
-    <button class="pear-btn pear-btn-primary pear-btn-sm" lay-event="edit"><i class="layui-icon layui-icon-edit"></i></button>
-    <button class="pear-btn pear-btn-danger pear-btn-sm" lay-event="remove"><i class="layui-icon layui-icon-delete"></i></button>
+    <button class="pear-btn pear-btn-primary pear-btn-sm" lay-event="edit"><i class="layui-icon layui-icon-edit"></i>
+    </button>
+    <button class="pear-btn pear-btn-danger pear-btn-sm" lay-event="remove"><i class="layui-icon layui-icon-delete"></i>
+    </button>
 </script>
 
 <script type="text/html" id="user-enable">
-    <input type="checkbox" name="enable" value="{{d.id}}" lay-skin="switch" lay-text="启用|禁用" lay-filter="user-enable" checked = "{{ d.enable == 0 ? 'true' : 'false' }}">
+    <input type="checkbox" name="enable" value="{{d.id}}" lay-skin="switch" lay-text="启用|禁用" lay-filter="user-enable"
+           checked="{{ d.enable == 0 ? 'true' : 'false' }}">
 </script>
 
 <script type="text/html" id="user-sex">
@@ -80,11 +83,10 @@
 </script>
 
 
-
 <script src="{_STATIC_PATH}component/layui/layui.js"></script>
 <script src="{_STATIC_PATH}component/pear/pear.js"></script>
 <script>
-    layui.use(['table', 'form', 'jquery','common'], function() {
+    layui.use(['table', 'form', 'jquery', 'common'], function () {
         let table = layui.table;
         let form = layui.form;
         let $ = layui.jquery;
@@ -145,7 +147,7 @@
             }, 'filter', 'print', 'exports']
         });
 
-        table.on('tool(user-table)', function(obj) {
+        table.on('tool(user-table)', function (obj) {
             if (obj.event === 'remove') {
                 window.remove(obj);
             } else if (obj.event === 'edit') {
@@ -153,7 +155,7 @@
             }
         });
 
-        table.on('toolbar(user-table)', function(obj) {
+        table.on('toolbar(user-table)', function (obj) {
             if (obj.event === 'add') {
                 window.add();
             } else if (obj.event === 'refresh') {
@@ -163,71 +165,65 @@
             }
         });
 
-        form.on('submit(user-query)', function(data) {
+        form.on('submit(user-query)', function (data) {
             table.reload('user-table', {
                 where: data.field
             })
             return false;
         });
 
-        form.on('switch(user-enable)', function(obj) {
+        form.on('switch(user-enable)', function (obj) {
             layer.tips(this.value + ' ' + this.name + '：' + obj.elem.checked, obj.othis);
         });
 
-        window.add = function() {
+        window.add = function () {
             layer.open({
                 type: 2,
                 title: '新增',
                 shade: 0.1,
                 area: ['500px', '400px'],
-                content: MODULE_PATH + 'add.html'
+                content: '{:url("add")}'
             });
         }
 
-        window.edit = function(obj) {
+        window.edit = function (obj) {
             layer.open({
                 type: 2,
                 title: '修改',
                 shade: 0.1,
                 area: ['500px', '400px'],
-                content: MODULE_PATH + 'edit.html'
+                content: '{:url("edit")}' + "&id=" + obj.data.id
             });
         }
 
-        window.remove = function(obj) {
+        window.remove = function (obj) {
             layer.confirm('确定要删除该用户', {
                 icon: 3,
                 title: '提示'
-            }, function(index) {
+            }, function (index) {
                 layer.close(index);
                 let loading = layer.load();
                 $.ajax({
-                    url: MODULE_PATH + "remove/" + obj.data['userId'],
+                    url: '{:url("delete")}' + "&id=" + obj.data.id,
                     dataType: 'json',
                     type: 'delete',
-                    success: function(result) {
+                    success: function (result) {
                         layer.close(loading);
-                        if (result.success) {
-                            layer.msg(result.msg, {
-                                icon: 1,
-                                time: 1000
-                            }, function() {
+                        if (result.status == "1") {
+                            layer.msg(result.message, function () {
                                 obj.del();
                             });
                         } else {
-                            layer.msg(result.msg, {
-                                icon: 2,
-                                time: 1000
-                            });
+                            layer.msg(result.message);
                         }
                     }
                 })
             });
         }
 
-        window.batchRemove = function(obj) {
+        window.batchRemove = function (obj) {
 
-            var checkIds = common.checkField(obj,'userId');
+            var checkIds = common.checkField(obj, 'userId');
 
             if (checkIds === "") {
                 layer.msg("未选中数据", {
@@ -240,20 +236,20 @@
             layer.confirm('确定要删除这些用户', {
                 icon: 3,
                 title: '提示'
-            }, function(index) {
+            }, function (index) {
                 layer.close(index);
                 let loading = layer.load();
                 $.ajax({
                     url: MODULE_PATH + "batchRemove/" + ids,
                     dataType: 'json',
                     type: 'delete',
-                    success: function(result) {
+                    success: function (result) {
                         layer.close(loading);
                         if (result.success) {
                             layer.msg(result.msg, {
                                 icon: 1,
                                 time: 1000
-                            }, function() {
+                            }, function () {
                                 table.reload('user-table');
                             });
                         } else {
@@ -267,7 +263,7 @@
             });
         }
 
-        window.refresh = function(param) {
+        window.refresh = function (param) {
             table.reload('user-table');
         }
     })

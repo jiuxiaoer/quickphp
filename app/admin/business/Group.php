@@ -23,14 +23,23 @@ class Group
         $this->authGroupModel = new AuthGroup();
     }
 
-    /**获取用户组数据
+    public function getGroups($field)
+    {
+        $res = $this->authGroupModel->getGroups($field);
+        if (!$res) {
+            $res = [];
+        }
+        return $res->toArray();
+    }
+
+    /**获取用户组数据分页
      * @param $field
      * @param $limit
      * @return array|\think\Paginator
      */
-    public function getGruops($field, $limit)
+    public function getGruopsByPage($field, $limit)
     {
-        $res = $this->authGroupModel->getGruops($field, $limit);
+        $res = $this->authGroupModel->getGruopsByPage($field, $limit);
         if (!$res) {
             $res = [];
         }

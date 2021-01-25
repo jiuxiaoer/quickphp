@@ -17,8 +17,8 @@
         <p class="desc">九霄道长web脚手架</p>
     </div>
     <div class="layui-form-item">
-        <label class="login-icon layui-icon layui-icon-username" for="username"></label>
-        <input placeholder="账 户" id="username" lay-verify="username" name="username" type="text"
+        <label class="login-icon layui-icon layui-icon-username" for="name"></label>
+        <input placeholder="账 户" id="name" lay-verify="name" name="name" type="text"
                class="layui-input"/>
     </div>
     <div class="layui-form-item">
@@ -48,7 +48,7 @@
         var index;
         //自定义验证规则
         form.verify({
-            username: function (value) {
+            name: function (value) {
                 if (value.length < 4) {
                     return '账号至少得4个字符啊';
                 }
@@ -103,7 +103,7 @@
                             type: "post",
                             // dataType: "json",
                             data: {
-                                username: data.username,
+                                name: data.name,
                                 password: data.password,
                                 // 验证码数据，这些数据不用自己获取
                                 // 这是二次验证所需的三个值

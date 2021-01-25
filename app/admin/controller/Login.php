@@ -44,13 +44,13 @@ class  Login extends AdminBase
             return show_json(config("status.error"), "请求方式错误");
         }
         //参数校验
-        $username = $this->request->param("username", "", "trim");
+        $name = $this->request->param("name", "", "trim");
         $password = $this->request->param("password", "", "trim");
         $geetest_challenge = $this->request->param("geetest_challenge", "", "trim");
         $geetest_validate = $this->request->param("geetest_validate", "", "trim");
         $geetest_seccode = $this->request->param("geetest_seccode", "", "trim");
         $data = [
-            "username" => $username,
+            "name" => $name,
             "password" => $password,
             "geetest_challenge" => $geetest_challenge,
             "geetest_validate" => $geetest_validate,
@@ -58,7 +58,7 @@ class  Login extends AdminBase
         ];
         //校验层
         $validate = new \app\admin\validate\AdminUser();
-        if (!$validate->check($data)) {
+        if (!$validate->scene("login")->check($data)) {
             return show_json(config("status.error"), $validate->getError());
         }
         $res = false;

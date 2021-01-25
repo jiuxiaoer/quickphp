@@ -36,7 +36,7 @@ class AdminUser
                 //验证成功
                 $adminUserObj = new \app\common\model\mysql\AdminUser();
                 //判断用户是否存在
-                $adminUser = self::getAdminUserByName($data["username"]);
+                $adminUser = self::getAdminUserByName($data["name"]);
                 if (empty($adminUser)) {
                     throw new Exception("不存在该用户");
                 }
@@ -79,16 +79,26 @@ class AdminUser
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    public static function getAdminUserByName($username)
+    public static function getAdminUserByName($name)
     {
         $adminUserObj = new \app\common\model\mysql\AdminUser();
         //判断用户是否存在
-        $adminUser = $adminUserObj->getAdminUser($username);
+        $adminUser = $adminUserObj->getAdminUser($name);
         if (empty($adminUser) || $adminUser->status != config("status.mysql.table_normal")) {
             return false;
         }
         $adminUser = $adminUser->toArray();
         return $adminUser;
+    }
+
+    public function getUserById($id, $field)
+    {
+        $res = $this->adminUserModel->getByID($id, $field);
+        if (!$res) {
+            throw new \think\Exception("id不存在");
+        }
+        $res->group_id = $this->adminUserModel->getRoleId($res->id);
+        return $res->toArray();
     }
 
     /***
@@ -114,6 +124,43 @@ class AdminUser
             'count' => $total,
             'data' => $items
         ];
+        return $res;
+    }
+
+    public function updateById($data)
+    {
+        try {
+            $res = (new \app\common\model\mysql\AuthGroupAccess())->updateByUiD($data["id"], ["group_id" => $data["group_id"]]);
+            unset($data["group_id"]);
+            $res = $this->adminUserModel->updateById($data["id"], $data);
+        } catch (\Exception $e) {
+            throw new \think\Exception("服务器内部异常");
+        }
+        return $res;
+    }
+
+    public function save($data)
+    {
+        try {
+            $model = new adminUserModel();
+            $group_id = $data["group_id"];
+            unset($data["group_id"]);
+            $data["password"] = md5($data["password"] . "jiuxiao");
+            $model->save($data);
+            $res = (new \app\common\model\mysql\AuthGroupAccess())->save(["uid" => $model->id, "group_id" => $group_id]);
+        } catch (\Exception $e) {
+            throw new \think\Exception("服务器内部异常");
+        }
+        return $res;
+    }
+
+    public function deleteById($id)
+    {
+        try {
+            $res = $this->adminUserModel->deleteById($id);
+        } catch (\Exception $e) {
+            throw new \think\Exception("服务器内部异常");
+        }
         return $res;
     }
 }

@@ -163,7 +163,7 @@ class Group extends AdminBase
         $page = $this->request->param("page", 1, "intval");
         $limit = $this->request->param("limit", 10, "intval");
         try {
-            $data = (new GroupBus())->getGruops("id,title,status", $limit);
+            $data = (new GroupBus())->getGruopsByPage("id,title,status", $limit);
         } catch (\Exception $e) {
             $data = [];
         }

@@ -15,13 +15,13 @@ class AdminUser extends MysqlBase
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    public function getAdminUser($username)
+    public function getAdminUser($name)
     {
-        if (empty($username)) {
+        if (empty($name)) {
             return false;
         }
         $where = [
-            "name" => trim($username)
+            "name" => trim($name)
         ];
         $res = $this->where($where)->find();
         return $res;
@@ -50,5 +50,15 @@ class AdminUser extends MysqlBase
         }
 
     }
+    public function getRoleId($uid)
+    {
+        try {
+            $gid = AuthGroupAccess::where('uid', $uid)->find()->group_id;
+            $id = AuthGroup::where('id', $gid)->find()->id;
+            return $id;
+        } catch (\Exception $e) {
+            return 0;
+        }
 
+    }
 }

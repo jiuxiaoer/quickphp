@@ -7,9 +7,19 @@
 
 namespace app\common\model\mysql;
 
-use think\model\Pivot;
 
-class AuthGroupAccess extends Pivot
+class AuthGroupAccess extends MysqlBase
 {
-    protected $autoWriteTimestamp = true;
+
+    public function updateByUiD($id, $data)
+    {
+        $id = intval($id);
+        if (empty($id) || empty($data) || !is_array($data)) {
+            return false;
+        }
+        $where = [
+            "uid" => $id
+        ];
+        return $this->where($where)->save($data);
+    }
 }
