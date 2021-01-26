@@ -109,7 +109,7 @@ class AdminUser
      */
     public function getUsers($field, $limit)
     {
-        $res = $this->adminUserModel->getUsers($field, $limit);
+        $res = $this->adminUserModel->getUserByPage($field, $limit);
         foreach ($res as &$v) {
             $v->role = $this->adminUserModel->getRole($v->id);
         }

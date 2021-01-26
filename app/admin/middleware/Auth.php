@@ -12,6 +12,11 @@ use think\facade\Session;
  */
 class Auth
 {
+
+    protected  $notCheck = [
+        '/admin/index/index',
+        "/admin/author/menu"
+    ];
     /**
      * @param $request
      * @param \Closure $next
@@ -24,6 +29,12 @@ class Auth
         if (empty(Session::get(config("admin.admin_session"))) && preg_match("/login/", $request->pathinfo()) != 1) {
             dump(empty(Session::get(config("admin.admin_session"))));
             return redirect((string)url("login/index"));
+        } else {
+            $url = $request->url();
+            $bool = self::isAuth($url);
+            if (!$bool) {
+                return json("权限不足");
+            }
         }
         $res = $next($request);
         //后置中间件
@@ -38,6 +49,16 @@ class Auth
     public function end(\think\Response $response)
     {
 
+    }
+
+    public function isAuth($url)
+    {
+        $url = str_replace('.html', '', $url);
+        $res = (new \app\admin\business\Auth())->
+        getAuthor(Session::get(config("admin.admin_session"))["id"]);
+        $res=array_merge($res,$this->notCheck);
+        $bool = in_array($url, $res);
+        return $bool;
     }
 
 }

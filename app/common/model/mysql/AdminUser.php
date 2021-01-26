@@ -27,7 +27,19 @@ class AdminUser extends MysqlBase
         return $res;
     }
 
-    public function getUsers($field = "*", $limit)
+    public function getUsers($field = "*")
+    {
+        $where = [
+            "status" => config("status.mysql.table_normal")
+        ];
+        $order = [
+            "id" => "asc"
+        ];
+        $res = $this->where($where)->field($field)->order($order)->select();
+        return $res;
+    }
+
+    public function getUserByPage($field = "*", $limit)
     {
         $where = [
             "status" => config("status.mysql.table_normal")
@@ -50,6 +62,7 @@ class AdminUser extends MysqlBase
         }
 
     }
+
     public function getRoleId($uid)
     {
         try {
@@ -60,5 +73,17 @@ class AdminUser extends MysqlBase
             return 0;
         }
 
+    }
+
+    public function getAuthRules($uid)
+    {
+        try {
+            $gid = AuthGroupAccess::where('uid', $uid)->find()->group_id;
+            $rules = AuthGroup::where('id', $gid)->find()->rules;
+            $ruleList = AuthRule::where("id", "in", $rules)->where('href','<>',"")->column('href');
+            return $ruleList;
+        } catch (\Exception $e) {
+            return 0;
+        }
     }
 }
