@@ -12,15 +12,24 @@ use think\facade\Session;
  */
 class Auth
 {
-
-    protected  $notCheck = [
+//不加入权限控制的路由,适合一些公共信息
+    protected $notCheck = [
         '/admin/index/index',
-        "/admin/author/menu"
+        "/admin/author/menu",
+        "/admin/login/index",
+        "/admin/login/check",
+        "/admin/Group/groupJson",
+        "/admin/index/console",
+        "/admin/author/authjson",
+        "/admin/group/groupjson",
+        "/admin/user/getuserjson",
+        "/admin/author/add"
     ];
-    /**
+
+    /***
      * @param $request
      * @param \Closure $next
-     * @return mixed
+     * @return mixed|\think\response\Json|\think\response\Redirect
      */
     public function handle($request, \Closure $next)
     {
@@ -29,15 +38,14 @@ class Auth
         if (empty(Session::get(config("admin.admin_session"))) && preg_match("/login/", $request->pathinfo()) != 1) {
             dump(empty(Session::get(config("admin.admin_session"))));
             return redirect((string)url("login/index"));
-        } else {
-            $url = $request->url();
-            $bool = self::isAuth($url);
-            if (!$bool) {
-                return json("权限不足");
-            }
         }
         $res = $next($request);
         //后置中间件
+        $url = "/" . app('http')->getName() . '/' . $request->controller() . '/' . $request->action();
+        $bool = self::isAuth(strtolower($url));
+        if (!$bool) {
+            return json("权限不足", 404);
+        }
         return $res;
 
     }
@@ -53,10 +61,15 @@ class Auth
 
     public function isAuth($url)
     {
-        $url = str_replace('.html', '', $url);
         $res = (new \app\admin\business\Auth())->
         getAuthor(Session::get(config("admin.admin_session"))["id"]);
-        $res=array_merge($res,$this->notCheck);
+        // 排除权限
+        $not_check = [];
+        foreach ($this->notCheck as $value) {
+            array_push($not_check,strtolower($value));
+        }
+        $res = array_merge($res, $not_check);
+
         $bool = in_array($url, $res);
         return $bool;
     }
