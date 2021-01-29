@@ -12,7 +12,7 @@ use think\facade\Session;
  */
 class Auth
 {
-//不加入权限控制的路由,适合一些公共信息
+    //不加入权限控制的路由,适合一些公共信息
     protected $notCheck = [
         '/admin/index/index',
         "/admin/author/menu",
@@ -23,7 +23,8 @@ class Auth
         "/admin/author/authjson",
         "/admin/group/groupjson",
         "/admin/user/getuserjson",
-        "/admin/author/authors"
+        "/admin/author/authors",
+        "/admin/index/exit"
     ];
 
     /***
@@ -39,12 +40,14 @@ class Auth
             dump(empty(Session::get(config("admin.admin_session"))));
             return redirect((string)url("login/index"));
         }
+        //权限拦截
         $url = $request->root() . '/' . $request->pathinfo();
         $url = str_replace(".html", "", $url);
         $bool = self::isAuth(strtolower($url));
         if (!$bool) {
             return show_json(404, "权限不足",[]);
         }
+
         $res = $next($request);
         //后置中间件
         return $res;
