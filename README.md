@@ -15,3 +15,5 @@ JiuXiaoWeb 1.0
   3.通过 validate层 校验参数
   4.参数校验完毕 数据发送到 逻辑层 逻辑层调用 model 层curd数据
 ~~~~
+测试地址：jiuxiao.79xj.cn
+代码交流 q 1247333542
