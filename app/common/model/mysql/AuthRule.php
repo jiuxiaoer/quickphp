@@ -32,7 +32,21 @@ class AuthRule extends MysqlBase
         $res = $this->where($where)->field($field)->order($order)->select();
         return $res;
     }
-    
+
+    public function getAuthsAdmin($field = "*")
+    {
+        $data=[
+            config("status.mysql.table_normal"),
+            config("status.mysql.table_hide")
+        ];
+
+        $order = [
+            "sort" => "asc",
+            "id" => "asc"
+        ];
+        $res = $this->where("status","in",$data)->field($field)->order($order)->select();
+        return $res;
+    }
 
     /**
      * @param $id

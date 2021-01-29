@@ -71,7 +71,7 @@
         <div class="layui-input-block">
             <select lay-filter="aihao" name="status">
                 <option value="1">显示</option>
-                <option value="-1">隐藏</option>
+                <option value="2">隐藏</option>
             </select>
         </div>
     </div>
@@ -129,7 +129,7 @@
 
         form.on('submit(save)', function (data) {
             $.ajax({
-                url: '{:url("update")}',
+                url: '',
                 type: "post",
                 data: data.field,
                 success: function (result) {

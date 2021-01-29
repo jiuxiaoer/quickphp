@@ -9,6 +9,7 @@ return [
     "error" => -1,
     "mysql"=>[
         "table_normal"=>1,//正常
+        "table_hide"=>2,//隐藏
         "table_pedding"=>0,//待审核
         "table_delete"=>-1//删除
     ]

@@ -78,7 +78,7 @@
         form.val("lotus-edit-filter", data);
         form.on('submit(save)', function (data) {
             $.ajax({
-                url: '{:url("update")}',
+                url: '',
                 type: "post",
                 data: data.field,
                 success: function (result) {

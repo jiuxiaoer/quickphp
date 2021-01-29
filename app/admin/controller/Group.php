@@ -28,40 +28,22 @@ class Group extends AdminBase
      */
     public function add()
     {
-        return View::fetch();
-    }
+        if ($this->request->isPost()) {
+            return $this->save();
+        }
+            return View::fetch();
 
-    /**
-     * 用户删除api
-     * @return \think\response\Json
-     */
-    public function delete()
-    {
-        $id = input("param.id", null, "intval");
-        $data = [
-            "id" => $id
-        ];
-        $validate = new \app\admin\validate\Group();
-        if (!$validate->scene("delete")->check($data)) {
-            return show_json(config("status.error"), $validate->getError());
-        }
-        try {
-            (new GroupBus())->deleteById($id);
-        } catch (\Exception $e) {
-            return show_json(config("status.error"), $e->getMessage());
-        }
-        return show_json(config("status.success"), "OK");
     }
 
     /**
      * 用户添加api
      * @return \think\response\Json
      */
-    public function save()
+    private function save()
     {
-        if (!$this->request->isPost()) {
-            return show_json(config("status.error"), "请求方式错误");
-        }
+//        if (!$this->request->isPost()) {
+//            return show_json(config("status.error"), "请求方式错误");
+//        }
         $check = $this->request->checkToken("__token__");
         if (!$check) {
             return show_json(config("status.error"), "非法请求");
@@ -92,10 +74,10 @@ class Group extends AdminBase
     }
 
     /**
-     * 用户编辑视图
-     * @return string|\think\response\Json
+     * 用户删除api
+     * @return \think\response\Json
      */
-    public function edit()
+    public function delete()
     {
         $id = input("param.id", null, "intval");
         $data = [
@@ -106,26 +88,52 @@ class Group extends AdminBase
             return show_json(config("status.error"), $validate->getError());
         }
         try {
-            $data = (new GroupBus())->getGroupById("id,title,status,rules", $id);
+            (new GroupBus())->deleteById($id);
         } catch (\Exception $e) {
-            $data = [];
             return show_json(config("status.error"), $e->getMessage());
         }
+        return show_json(config("status.success"), "OK");
+    }
 
-        return View::fetch("", [
-            'data' => $data
-        ]);
+    /**
+     * 用户编辑视图
+     * @return string|\think\response\Json
+     */
+    public function edit()
+    {
+        if ($this->request->isPost()) {
+            return $this->update();
+        }
+            $id = input("param.id", null, "intval");
+            $data = [
+                "id" => $id
+            ];
+            $validate = new \app\admin\validate\Group();
+            if (!$validate->scene("delete")->check($data)) {
+                return show_json(config("status.error"), $validate->getError());
+            }
+            try {
+                $data = (new GroupBus())->getGroupById("id,title,status,rules", $id);
+            } catch (\Exception $e) {
+                $data = [];
+                return show_json(config("status.error"), $e->getMessage());
+            }
+
+            return View::fetch("", [
+                'data' => $data
+            ]);
+
     }
 
     /***
      * 用户更新api
      * @return \think\response\Json
      */
-    public function update()
+    private function update()
     {
-        if (!$this->request->isPost()) {
-            return show_json(config("status.error"), "请求方式错误");
-        }
+//        if (!$this->request->isPost()) {
+//            return show_json(config("status.error"), "请求方式错误");
+//        }
         $check = $this->request->checkToken("__token__");
         if (!$check) {
             return show_json(config("status.error"), "非法请求");

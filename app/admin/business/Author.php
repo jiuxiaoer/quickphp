@@ -100,7 +100,7 @@ class Author
      */
     public function getAuths($field)
     {
-        $res = $this->authRuleModel->getAuths($field);
+        $res = $this->authRuleModel->getAuthsAdmin($field);
         if (!$res) {
             $res = [];
         }
@@ -118,6 +118,15 @@ class Author
     public function getMenuJson($field)
     {
         $res = $this->authRuleModel->getAuths($field);
+        if (!$res) {
+            $res = [];
+        }
+        return $res = \app\common\lib\Arr::make_tree($res->toArray());
+    }
+
+    public function getMenuJsonAdmin($field)
+    {
+        $res = $this->authRuleModel->getAuthsAdmin($field);
         if (!$res) {
             $res = [];
         }

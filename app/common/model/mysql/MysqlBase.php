@@ -48,8 +48,7 @@ class MysqlBase extends Model
     public function getByID($id, $field = "*")
     {
         $where = [
-            "id" => $id,
-            "status" => config("status.mysql.table_normal")
+            "id" => $id
         ];
         $res = $this->field($field)->where($where)->find();
         return $res;

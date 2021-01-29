@@ -10,7 +10,7 @@ class Author extends Validate
         "id" => "require|integer|notIn:0",
         "pid" => "require|integer",
         "sort" => "require|integer",
-        "status" => "in:-1,1",
+        "status" => "in:-1,1,2",
         "title" => "require",
 //        "href" => "require",
         "icon" => "require",

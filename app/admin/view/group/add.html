@@ -48,7 +48,7 @@
             layer = layui.layer
         ;
         $.ajax({
-            url: "{:url('admin/author/menu')}",
+            url: "{:url('admin/author/authors')}",
             type: "post",
             dataType: "json",
             success: function (data) {
@@ -64,7 +64,7 @@
         });
         form.on('submit(edit)', function (data) {
             $.ajax({
-                url: "{:url('save')}",
+                url: "",
                 type: "post",
                 dataType: "json",
                 data: data.field,

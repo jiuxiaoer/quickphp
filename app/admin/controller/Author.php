@@ -28,11 +28,50 @@ class Author extends AdminBase
      */
     public function add()
     {
+        if ($this->request->isPost()) {
+            return $this->save();
+        }
         $res = (new AuthorBus())->getAuths("id,title,pid");
         $data = array2Level($res);
         return View::fetch("", [
             "author" => $data
         ]);
+
+
+    }
+
+    /**
+     * 修改页面视图
+     * @return string|\think\response\Json
+     */
+    public function edit()
+    {
+        if ($this->request->isPost()) {
+            return $this->update();
+        }
+        $id = input("param.id", null, "intval");
+        $data = [
+            "id" => $id
+        ];
+        $validate = new \app\admin\validate\Author();
+        if (!$validate->scene("delete")->check($data)) {
+            return show_json(config("status.error"), $validate->getError());
+        }
+        try {
+            $data = (new AuthorBus())->getAuthorRuleById($id, "id,title,href,icon,pid,sort,status,type");
+            $res = (new AuthorBus())->getAuths("id,title,pid");
+            $auth = array2Level($res);
+        } catch (\Exception $e) {
+            $data = [];
+            $auth = [];
+            return show_json(config("status.error"), $e->getMessage());
+        }
+        return View::fetch("", [
+            "author" => $auth,
+            "data" => $data
+        ]);
+
+
     }
 
     /***
@@ -58,14 +97,14 @@ class Author extends AdminBase
     }
 
     /**
-     * 权限添加接口
+     * 权限添加api
      * @return \think\response\Json
      */
-    public function save()
+    private function save()
     {
-        if (!$this->request->isPost()) {
-            return show_json(config("status.error"), "请求方式错误");
-        }
+//        if (!$this->request->isPost()) {
+//            return show_json(config("status.error"), "请求方式错误");
+//        }
         $check = $this->request->checkToken("__token__");
         if (!$check) {
             return show_json(config("status.error"), "非法请求");
@@ -100,44 +139,15 @@ class Author extends AdminBase
         return show_json(config("status.success"), "OK");
     }
 
-    /**
-     * 修改页面视图
-     * @return string|\think\response\Json
-     */
-    public function edit()
-    {
-        $id = input("param.id", null, "intval");
-        $data = [
-            "id" => $id
-        ];
-        $validate = new \app\admin\validate\Author();
-        if (!$validate->scene("delete")->check($data)) {
-            return show_json(config("status.error"), $validate->getError());
-        }
-        try {
-            $data = (new AuthorBus())->getAuthorRuleById($id, "id,title,href,icon,pid,sort,status,type");
-            $res = (new AuthorBus())->getAuths("id,title,pid");
-            $auth = array2Level($res);
-        } catch (\Exception $e) {
-            $data = [];
-            $auth = [];
-            return show_json(config("status.error"), $e->getMessage());
-        }
-        return View::fetch("", [
-            "author" => $auth,
-            "data" => $data
-        ]);
-    }
-
     /***
      * 更新api
      * @return \think\response\Json
      */
-    public function update()
+    private function update()
     {
-        if (!$this->request->isPost()) {
-            return show_json(config("status.error"), "请求方式错误");
-        }
+//        if (!$this->request->isPost()) {
+//            return show_json(config("status.error"), "请求方式错误");
+//        }
         $check = $this->request->checkToken("__token__");
         if (!$check) {
             return show_json(config("status.error"), "非法请求");
@@ -195,6 +205,16 @@ class Author extends AdminBase
     {
         try {
             $data = (new AuthorBus())->getMenuJson("id,title,icon,href,type,pid");
+        } catch (\Exception $e) {
+            $data = [];
+        }
+        return json($data);
+    }
+
+    public function authors()
+    {
+        try {
+            $data = (new AuthorBus())->getMenuJsonAdmin("id,title,icon,href,type,pid");
         } catch (\Exception $e) {
             $data = [];
         }

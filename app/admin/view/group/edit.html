@@ -56,7 +56,7 @@
         }
         form.val("lotus-edit-filter", dataGRoup);
         $.ajax({
-            url: "{:url('admin/author/menu')}",
+            url: "{:url('admin/author/authors')}",
             type: "post",
             dataType: "json",
             success: function (data) {
@@ -74,7 +74,7 @@
         });
         form.on('submit(edit)', function (data) {
             $.ajax({
-                url: "{:url('update')}",
+                url: "",
                 type: "post",
                 dataType: "json",
                 data: data.field,

@@ -38,7 +38,12 @@ class User extends AdminBase
         }
         return json($data);
     }
-    public function add(){
+
+    public function add()
+    {
+        if ($this->request->isPost()) {
+            return $this->save();
+        }
         try {
             $group = (new GroupBus())->getGroups("id,title");
         } catch (\Exception $e) {
@@ -49,10 +54,12 @@ class User extends AdminBase
             "group" => $group,
         ]);
     }
-    public function save(){
-        if (!$this->request->isPost()) {
-            return show_json(config("status.error"), "请求方式错误");
-        }
+
+    private function save()
+    {
+//        if (!$this->request->isPost()) {
+//            return show_json(config("status.error"), "请求方式错误");
+//        }
         $check = $this->request->checkToken("__token__");
         if (!$check) {
             return show_json(config("status.error"), "非法请求");
@@ -79,8 +86,12 @@ class User extends AdminBase
         }
         return show_json(config("status.success"), "OK");
     }
+
     public function edit()
     {
+        if ($this->request->isPost()) {
+            return $this->update();
+        }
         $id = input("param.id", null, "intval");
         $data = [
             "id" => $id
@@ -102,11 +113,12 @@ class User extends AdminBase
             "data" => $data
         ]);
     }
-    public function update()
+
+    private function update()
     {
-        if (!$this->request->isPost()) {
-            return show_json(config("status.error"), "请求方式错误");
-        }
+//        if (!$this->request->isPost()) {
+//            return show_json(config("status.error"), "请求方式错误");
+//        }
         $check = $this->request->checkToken("__token__");
         if (!$check) {
             return show_json(config("status.error"), "非法请求");
@@ -144,6 +156,7 @@ class User extends AdminBase
         return show_json(config("status.success"), "OK");
 
     }
+
     public function delete()
     {
         $id = input("param.id", null, "intval");

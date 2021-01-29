@@ -84,8 +84,12 @@
 </script>
 
 <script type="text/html" id="power-enable">
-    <input type="checkbox" name="enable" value="{{d.id}}" lay-skin="switch" lay-text="启用|禁用" lay-filter="user-enable"
-           checked="{{ d.id == 1 ? 'true' : 'false' }}">
+    {{#if (d.status == '1') { }}
+    <span>显示</span>
+    {{# }else if(d.status == '2'){ }}
+    <span>隐藏</span>
+
+    {{# } }}
 </script>
 
 <script type="text/html" id="icon">

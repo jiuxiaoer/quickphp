@@ -23,7 +23,7 @@ class Auth
         "/admin/author/authjson",
         "/admin/group/groupjson",
         "/admin/user/getuserjson",
-        "/admin/author/add"
+        "/admin/author/authors"
     ];
 
     /***
@@ -39,13 +39,14 @@ class Auth
             dump(empty(Session::get(config("admin.admin_session"))));
             return redirect((string)url("login/index"));
         }
-        $res = $next($request);
-        //后置中间件
-        $url = "/" . app('http')->getName() . '/' . $request->controller() . '/' . $request->action();
+        $url = $request->root() . '/' . $request->pathinfo();
+        $url = str_replace(".html", "", $url);
         $bool = self::isAuth(strtolower($url));
         if (!$bool) {
-            return json("权限不足", 404);
+            return show_json(404, "权限不足",[]);
         }
+        $res = $next($request);
+        //后置中间件
         return $res;
 
     }
@@ -66,7 +67,7 @@ class Auth
         // 排除权限
         $not_check = [];
         foreach ($this->notCheck as $value) {
-            array_push($not_check,strtolower($value));
+            array_push($not_check, strtolower($value));
         }
         $res = array_merge($res, $not_check);
 
