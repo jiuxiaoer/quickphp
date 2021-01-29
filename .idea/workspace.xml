@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="597bfc98-786a-4d69-86c7-3a470635b135" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.example.env" beforeDir="false" afterPath="$PROJECT_DIR$/.example.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/topthink/framework" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-orm" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-trace" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-multi-app" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-view" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-template" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1mlz9mPljbzfWBC9FgvUv6LhTfI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/common/lib" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpstudy_pro\web\tp\app\common\lib" />
+      <recent name="D:\phpstudy_pro\web\tp\app\admin\business" />
+      <recent name="D:\phpstudy_pro\web\tp\app\admin\validate" />
+      <recent name="D:\phpstudy_pro\web\tp\config" />
+      <recent name="D:\phpstudy_pro\web\tp\public\static\component" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/public/index.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.3" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="597bfc98-786a-4d69-86c7-3a470635b135" name="默认更改列表" comment="" />
+      <created>1610082816648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610082816648</updated>
+      <workItem from="1610082818842" duration="5302000" />
+      <workItem from="1610171143693" duration="5454000" />
+      <workItem from="1610262080085" duration="2446000" />
+      <workItem from="1610511891657" duration="1318000" />
+      <workItem from="1610525150425" duration="4768000" />
+      <workItem from="1610625983347" duration="8367000" />
+      <workItem from="1610716406701" duration="2681000" />
+      <workItem from="1610768596406" duration="11446000" />
+      <workItem from="1610856406229" duration="5342000" />
+      <workItem from="1610862016676" duration="611000" />
+      <workItem from="1610883940320" duration="2679000" />
+      <workItem from="1610950749658" duration="7351000" />
+      <workItem from="1611033485894" duration="9758000" />
+      <workItem from="1611138681764" duration="2654000" />
+      <workItem from="1611206356552" duration="13585000" />
+      <workItem from="1611234628316" duration="454000" />
+      <workItem from="1611235225079" duration="160000" />
+      <workItem from="1611247017019" duration="4269000" />
+      <workItem from="1611290957047" duration="2323000" />
+      <workItem from="1611379103692" duration="5564000" />
+      <workItem from="1611467228288" duration="7889000" />
+      <workItem from="1611508943465" duration="3868000" />
+      <workItem from="1611556545400" duration="5626000" />
+      <workItem from="1611592131104" duration="1875000" />
+      <workItem from="1611642223367" duration="5239000" />
+      <workItem from="1611658561432" duration="891000" />
+      <workItem from="1611744292099" duration="2414000" />
+      <workItem from="1611892950929" duration="11138000" />
+      <workItem from="1611914662505" duration="1243000" />
+      <workItem from="1611920237714" duration="2160000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="452" y="0" key="#PHP" timestamp="1610694958057">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="452" y="0" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1610694958057" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1611489958025">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1611489958025" />
+    <state x="166" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610963056607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="166" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1610963056607" />
+    <state x="493" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611899970285">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="493" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1611899970285" />
+    <state x="488" y="99" key="#index.php" timestamp="1610268143458">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="488" y="99" key="#index.php/0.0.1536.824@0.0.1536.824" timestamp="1610268143458" />
+    <state width="1493" height="481" key="GridCell.Tab.0.bottom" timestamp="1610268156204">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="481" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610268156204" />
+    <state width="1493" height="481" key="GridCell.Tab.0.center" timestamp="1610268156204">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="481" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610268156204" />
+    <state width="1493" height="481" key="GridCell.Tab.0.left" timestamp="1610268156204">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="481" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610268156204" />
+    <state width="1493" height="481" key="GridCell.Tab.0.right" timestamp="1610268156204">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="481" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610268156204" />
+    <state x="547" y="225" key="NewPhpClassDialog" timestamp="1611380174051">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="547" y="225" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1611380174051" />
+    <state x="599" y="335" key="NewPhpFileDialog" timestamp="1611592634918">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="599" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1611592634918" />
+    <state x="270" y="54" key="SettingsEditor" timestamp="1610695875816">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610695875816" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1611557168814">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1611557168814" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611235374891">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1611235374891" />
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1611920239339">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1611920239339" />
+    <state x="303" y="47" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611035851447">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="303" y="47" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1611035851447" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1611249871936">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1611249871936" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611560421043">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611560421043" />
+  </component>
+</project>
