@@ -4,7 +4,7 @@
 /.vscode
 /vendor
 *.log
-.env
+.example.env
 =======
 =======
 >>>>>>> c2852bb... 测试提交
@@ -34,6 +34,6 @@ bin-release/
 /.vscode
 /vendor
 *.log
-.env
+.example.env
 >>>>>>> 8a3014f... my first commit
 >>>>>>> c2852bb... 测试提交
