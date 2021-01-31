@@ -108,7 +108,7 @@ class Author
     }
 
     /**
-     * 获取菜单栏数据
+     * 获取当前用户菜单栏数据
      * @param $field
      * @return array
      * @throws \think\db\exception\DataNotFoundException
@@ -117,7 +117,7 @@ class Author
      */
     public function getMenuJson($field)
     {
-        $res = $this->authRuleModel->getAuths($field);
+        $res = $this->authRuleModel->getAuthsByLoginUser($field);
         if (!$res) {
             $res = [];
         }

@@ -80,7 +80,7 @@ class AdminUser extends MysqlBase
         try {
             $gid = AuthGroupAccess::where('uid', $uid)->find()->group_id;
             $rules = AuthGroup::where('id', $gid)->find()->rules;
-            $ruleList = AuthRule::where("id", "in", $rules)->where('href','<>',"")->column('href');
+            $ruleList = AuthRule::where("id", "in", $rules)->where('href', '<>', "")->column('href');
             return $ruleList;
         } catch (\Exception $e) {
             return 0;

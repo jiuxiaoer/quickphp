@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597bfc98-786a-4d69-86c7-3a470635b135" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.example.env" beforeDir="false" afterPath="$PROJECT_DIR$/.example.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/business/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/business/Author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/controller/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/controller/Group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/common/model/mysql/AdminUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/common/model/mysql/AdminUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/common/model/mysql/AuthRule.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/common/model/mysql/AuthRule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/GtSdk.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/GtSdk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/nginx.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/nginx.htaccess" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +145,11 @@
       <workItem from="1611744292099" duration="2414000" />
       <workItem from="1611892950929" duration="11138000" />
       <workItem from="1611914662505" duration="1243000" />
-      <workItem from="1611920237714" duration="2160000" />
+      <workItem from="1611920237714" duration="2466000" />
+      <workItem from="1612074186554" duration="40000" />
+      <workItem from="1612093629886" duration="695000" />
+      <workItem from="1612094499051" duration="1745000" />
+      <workItem from="1612114439626" duration="834000" />
     </task>
     <servers />
   </component>
@@ -160,10 +169,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="166" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1610963056607" />
-    <state x="493" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611899970285">
+    <state x="651" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612115106000">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="493" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1611899970285" />
+    <state x="651" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1612115106000" />
     <state x="488" y="99" key="#index.php" timestamp="1610268143458">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -204,10 +213,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1611235374891" />
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1611920239339">
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1612114439076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1611920239339" />
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1612114439076" />
     <state x="303" y="47" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611035851447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

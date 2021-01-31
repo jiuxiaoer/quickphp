@@ -2,6 +2,7 @@
 
 namespace app\common\model\mysql;
 
+use think\facade\Session;
 use think\Model;
 
 /**
@@ -33,9 +34,26 @@ class AuthRule extends MysqlBase
         return $res;
     }
 
+    public function getAuthsByLoginUser($field = "*")
+    {
+        $gid = AuthGroupAccess::where('uid', Session::get(config("admin.admin_session"))["id"])->find()->group_id;
+        $rules = AuthGroup::where('id', $gid)->find()->rules;
+
+        $where = [
+            "status" => config("status.mysql.table_normal")
+        ];
+        $order = [
+            "sort" => "asc",
+            "id" => "asc"
+        ];
+        $res = $this->where($where)->where("id", "in", $rules)
+            ->field($field)->order($order)->select();
+        return $res;
+    }
+
     public function getAuthsAdmin($field = "*")
     {
-        $data=[
+        $data = [
             config("status.mysql.table_normal"),
             config("status.mysql.table_hide")
         ];
@@ -44,7 +62,7 @@ class AuthRule extends MysqlBase
             "sort" => "asc",
             "id" => "asc"
         ];
-        $res = $this->where("status","in",$data)->field($field)->order($order)->select();
+        $res = $this->where("status", "in", $data)->field($field)->order($order)->select();
         return $res;
     }
 

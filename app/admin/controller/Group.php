@@ -118,7 +118,6 @@ class Group extends AdminBase
                 $data = [];
                 return show_json(config("status.error"), $e->getMessage());
             }
-
             return View::fetch("", [
                 'data' => $data
             ]);
