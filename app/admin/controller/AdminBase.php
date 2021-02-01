@@ -32,15 +32,4 @@ class  AdminBase extends BaseController
         throw new HttpResponseException(redirect(...$args));
     }
 
-    public function  genTableJson($paginationObj,$code=0,$msg=''){
-        $total = $paginationObj->total();
-        $items = $paginationObj->items();
-        $res = [
-            'code'=>$code,
-            'msg'=>$msg,
-            'count'=>$total,
-            'data'=>$items
-        ];
-        echo json_encode($res);exit;
-    }
 }

@@ -12,10 +12,20 @@ use think\facade\Log;
 use think\facade\Session;
 use app\common\model\mysql\AdminUser as adminUserModel;
 
+/**
+ * Class AdminUser
+ * @package app\admin\business
+ */
 class AdminUser
 {
+    /**
+     * @var adminUserModel|null
+     */
     private $adminUserModel = null;
 
+    /**
+     * AdminUser constructor.
+     */
     public function __construct()
     {
         $this->adminUserModel = new adminUserModel();
@@ -91,18 +101,28 @@ class AdminUser
         return $adminUser;
     }
 
+    /**
+     * 通过id获取用户
+     * @param $id
+     * @param $field
+     * @return array
+     * @throws Exception
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
+     */
     public function getUserById($id, $field)
     {
         $res = $this->adminUserModel->getByID($id, $field);
         if (!$res) {
             throw new \think\Exception("id不存在");
         }
-        $res->group_id = $this->adminUserModel->getRoleId($res->id);
+        $res->group_id = $this->adminUserModel->getRole($res->id,"id")["id"];
         return $res->toArray();
     }
 
     /***
-     * 获取用户json数据
+     * 获取用户 分页json数据
      * @param $field
      * @param $limit
      * @return array|\think\Paginator
@@ -111,7 +131,7 @@ class AdminUser
     {
         $res = $this->adminUserModel->getUserByPage($field, $limit);
         foreach ($res as &$v) {
-            $v->role = $this->adminUserModel->getRole($v->id);
+            $v->role = $this->adminUserModel->getRole($v->id, "title")["title"];
         }
         if (!$res) {
             $res = [];
@@ -127,10 +147,16 @@ class AdminUser
         return $res;
     }
 
+    /**
+     * 通过id更新用户
+     * @param $data
+     * @return bool
+     * @throws Exception
+     */
     public function updateById($data)
     {
         try {
-            $res = (new \app\common\model\mysql\AuthGroupAccess())->updateByUiD($data["id"], ["group_id" => $data["group_id"]]);
+            $res = (new \app\common\model\mysql\AuthGroupAccess())->updateByUid($data["id"], ["group_id" => $data["group_id"]]);
             unset($data["group_id"]);
             $res = $this->adminUserModel->updateById($data["id"], $data);
         } catch (\Exception $e) {
@@ -139,6 +165,12 @@ class AdminUser
         return $res;
     }
 
+    /**
+     * 新增用户
+     * @param $data
+     * @return bool
+     * @throws Exception
+     */
     public function save($data)
     {
         try {
@@ -154,6 +186,12 @@ class AdminUser
         return $res;
     }
 
+    /**
+     * 通过id删除用户
+     * @param $id
+     * @return array|\think\Model|null
+     * @throws Exception
+     */
     public function deleteById($id)
     {
         try {

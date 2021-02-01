@@ -11,7 +11,7 @@ namespace app\common\model\mysql;
 class AuthGroupAccess extends MysqlBase
 {
 
-    public function updateByUiD($id, $data)
+    public function updateByUid($id, $data)
     {
         $id = intval($id);
         if (empty($id) || empty($data) || !is_array($data)) {

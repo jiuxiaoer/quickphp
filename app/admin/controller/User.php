@@ -24,6 +24,7 @@ class User extends AdminBase
     }
 
     /**
+     * 获取用户数据 分页json
      * @return \think\response\Json
      */
     public function getUserJson()
@@ -39,6 +40,10 @@ class User extends AdminBase
         return json($data);
     }
 
+    /**
+     * 添加页面
+     * @return string|\think\response\Json
+     */
     public function add()
     {
         if ($this->request->isPost()) {
@@ -55,6 +60,10 @@ class User extends AdminBase
         ]);
     }
 
+    /**
+     * 添加方法
+     * @return \think\response\Json
+     */
     private function save()
     {
 //        if (!$this->request->isPost()) {
@@ -87,6 +96,10 @@ class User extends AdminBase
         return show_json(config("status.success"), "OK");
     }
 
+    /**
+     * 更新页面
+     * @return string|\think\response\Json
+     */
     public function edit()
     {
         if ($this->request->isPost()) {
@@ -114,6 +127,10 @@ class User extends AdminBase
         ]);
     }
 
+    /**
+     * 更新方法
+     * @return \think\response\Json
+     */
     private function update()
     {
 //        if (!$this->request->isPost()) {
@@ -157,6 +174,10 @@ class User extends AdminBase
 
     }
 
+    /**
+     * 删除api
+     * @return \think\response\Json
+     */
     public function delete()
     {
         $id = input("param.id", null, "intval");

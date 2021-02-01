@@ -124,6 +124,10 @@ class Author
         return $res = \app\common\lib\Arr::make_tree($res->toArray());
     }
 
+    /**用户组编辑获取当前的权限数据
+     * @param $field
+     * @return array
+     */
     public function getMenuJsonAdmin($field)
     {
         $res = $this->authRuleModel->getAuthsAdmin($field);

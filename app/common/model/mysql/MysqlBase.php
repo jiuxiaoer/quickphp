@@ -9,6 +9,10 @@ namespace app\common\model\mysql;
 
 use think\Model;
 
+/**
+ * Class MysqlBase
+ * @package app\common\model\mysql
+ */
 class MysqlBase extends Model
 {
     /**
@@ -45,6 +49,15 @@ class MysqlBase extends Model
         return $res;
     }
 
+    /**
+     * 根据id获取数据
+     * @param $id
+     * @param string $field
+     * @return array|Model|null
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
+     */
     public function getByID($id, $field = "*")
     {
         $where = [

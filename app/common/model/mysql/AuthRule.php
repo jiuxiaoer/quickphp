@@ -67,6 +67,7 @@ class AuthRule extends MysqlBase
     }
 
     /**
+     * 通过id获取权限数据
      * @param $id
      * @param string $field
      * @return array|Model|null

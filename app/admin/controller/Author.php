@@ -211,6 +211,10 @@ class Author extends AdminBase
         return json($data);
     }
 
+    /**
+     * 用户组编辑获取当前的权限数据
+     * @return \think\response\Json
+     */
     public function authors()
     {
         try {

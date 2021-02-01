@@ -45,7 +45,7 @@ class Auth
         $url = str_replace(".html", "", $url);
         $bool = self::isAuth(strtolower($url));
         if (!$bool) {
-            return show_json(404, "权限不足",[]);
+            return show_json(404, "权限不足", []);
         }
 
         $res = $next($request);
@@ -63,7 +63,12 @@ class Auth
 
     }
 
-    public function isAuth($url)
+    /**
+     * 验证权限方法
+     * @param $url
+     * @return bool
+     */
+    private function isAuth($url)
     {
         $res = (new \app\admin\business\Auth())->
         getAuthor(Session::get(config("admin.admin_session"))["id"]);
