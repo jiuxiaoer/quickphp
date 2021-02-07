@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="597bfc98-786a-4d69-86c7-3a470635b135" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/GtSdk.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/GtSdk.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +162,7 @@
       <workItem from="1612340157421" duration="4105000" />
       <workItem from="1612404522898" duration="906000" />
       <workItem from="1612424097117" duration="1569000" />
-      <workItem from="1612669491948" duration="116000" />
+      <workItem from="1612669491948" duration="251000" />
     </task>
     <servers />
   </component>

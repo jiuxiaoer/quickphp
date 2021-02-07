@@ -17,5 +17,6 @@ JiuXiaoWeb 1.0
 ~~~~
 程序使用过程,本程序登陆使用了极验 https://www.geetest.com/
 请去申请行为验证key 放在config/GtSdk.php
+sql 文件 下载地址 ：https://wwa.lanzous.com/ibMcXlfcq9i
 测试地址：http://jiuxiao.79xj.cn
 代码交流 q 1247333542
