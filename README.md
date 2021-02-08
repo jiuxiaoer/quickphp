@@ -21,7 +21,7 @@ https://www.geetest.com/
 
 请去申请行为验证key 放在config/GtSdk.php
 
-sql 文件 下载地址 ：https://wwa.lanzous.com/iuMtYlgq09c
+sql 文件 转移到本地了! 
 
 测试地址：http://jiuxiao.79xj.cn
 
