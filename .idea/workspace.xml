@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597bfc98-786a-4d69-86c7-3a470635b135" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/app/admin/business/AdminLog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/admin/controller/Log.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/admin/view/log/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/common/model/mysql/AdminLog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/middleware/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/middleware/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/view/author/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/view/author/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +163,7 @@
       <workItem from="1612404522898" duration="906000" />
       <workItem from="1612424097117" duration="1569000" />
       <workItem from="1612669491948" duration="1541000" />
-      <workItem from="1612758457359" duration="3593000" />
+      <workItem from="1612758457359" duration="3823000" />
     </task>
     <servers />
   </component>
