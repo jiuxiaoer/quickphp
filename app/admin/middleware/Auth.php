@@ -24,7 +24,8 @@ class Auth
         "/admin/group/groupjson",
         "/admin/user/getuserjson",
         "/admin/author/authors",
-        "/admin/index/exit"
+        "/admin/index/exit",
+        "/admin/log/json"
     ];
 
     /***
@@ -47,7 +48,7 @@ class Auth
         if (!$bool) {
             return show_json(404, "权限不足", []);
         }
-
+        self::saveLog($request, $url);
         $res = $next($request);
         //后置中间件
         return $res;
@@ -81,6 +82,21 @@ class Auth
 
         $bool = in_array($url, $res);
         return $bool;
+    }
+
+    private function saveLog($request, $url)
+    {
+        if (in_array($url, $this->notCheck)) {
+            return;
+        }
+        $data = [
+            "user_id" => Session::get(config("admin.admin_session"))["id"],
+            "page" => $url,
+            "ip" => getip(),
+            "data" => json_encode($request->param(), 320),
+            "agent" => $request->header()["user-agent"]
+        ];
+        (new \app\common\model\mysql\AdminLog())->save($data);
     }
 
 }
