@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 样 式 文 件 -->
+    <link rel="stylesheet" href="{_STATIC_PATH}/component/pear/css/pear.css"/>
+    <link rel="stylesheet" href="{_STATIC_PATH}/admin/css/other/login.css"/>
+</head>
+<!-- 代 码 结 构 -->
+<body background="{_STATIC_PATH}/admin/images/background2.svg" style="background-size: cover;">
+<form class="layui-form" action="javascript:void(0);">
+    <div class="layui-form-item">
+        <h2 class="title">Jiu Xiao Admin</h2>
+        <p class="desc">九霄道长web脚手架</p>
+    </div>
+    <div class="layui-form-item">
+        <label class="login-icon layui-icon layui-icon-username" for="name"></label>
+        <input placeholder="账 户" id="name" lay-verify="name" name="name" type="text"
+               class="layui-input"/>
+    </div>
+    <div class="layui-form-item">
+        <label class="login-icon layui-icon layui-icon-password" for="password"></label>
+        <input placeholder="密 码" id="password" lay-verify="pass" name="password" type="password"
+               class="layui-input"/>
+    </div>
+    <div class="layui-form-item">
+        <button type="button" class="pear-btn pear-btn-success login" lay-submit lay-filter="login">
+            登 入
+        </button>
+    </div>
+</form>
+<!-- 资 源 引 入 -->
+<script src="{_STATIC_PATH}/component/layui/layui.js"></script>
+<script src="{_STATIC_PATH}/component/pear/pear.js"></script>
+<script>
+    layui.use(['form', 'jquery', 'button'], function () {
+        var form = layui.form;
+        var button = layui.button;
+        var $ = layui.jquery;
+        //自定义验证规则
+        form.verify({
+            name: function (value) {
+                if (value.length < 4) {
+                    return '账号至少得4个字符啊';
+                }
+            }
+            , pass: [
+                /^[\S]{6,12}$/
+                , '密码必须6到12位，且不能出现空格'
+            ]
+        });
+
+
+
+        form.on('submit(login)', function (data) {
+            button.load({
+                elem: '.login',
+                time: 1500,
+                done: function () {
+                    data = data.field;
+                    $.ajax({
+                        url: "check",
+                        type: "post",
+                        // dataType: "json",
+                        data: {
+                            name: data.name,
+                            password: data.password,
+                        },
+                        // 这里是正确返回处理结果的处理函数
+                        // 假设你就返回了1，2，3
+                        // 当然，正常情况是返回JSON数据
+                        success: function (result) {
+                            // 1表示验证码验证失败
+                            if (result.status == "1") {
+                                layer.msg(result.message, function () {
+                                    window.location = '';
+                                });
+                            } else {
+                                layer.msg(result.message);
+                            }
+                        }
+                    });
+
+                    return false;
+                }
+            })
+            return false;
+        });
+    })
+</script>
+</body>
+</html>

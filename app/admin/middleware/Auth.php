@@ -6,6 +6,7 @@ namespace app\admin\middleware;
 use think\facade\Session;
 
 /**
+ * 后台模块中间件
  * Auther: yinshen
  * url:https://www.79xj.cn
  * 创建时间：2021/1/8 14:02
@@ -38,7 +39,7 @@ class Auth
         //前置中间件
         //如果没登录并且访问非登录页面
         if (empty(Session::get(config("admin.admin_session"))) && preg_match("/login/", $request->pathinfo()) != 1) {
-            dump(empty(Session::get(config("admin.admin_session"))));
+//            dump(empty(Session::get(config("admin.admin_session"))));
             return redirect((string)url("login/index"));
         }
         //权限拦截

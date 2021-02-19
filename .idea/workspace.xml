@@ -1,7 +1,559 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="597bfc98-786a-4d69-86c7-3a470635b135" name="默认更改列表" comment="" />
+    <list default="true" id="597bfc98-786a-4d69-86c7-3a470635b135" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/app/admin/view/login/login1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/bin/var-dump-server" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/bin/var-dump-server.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/platform_check.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/.php_cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/.scrutinizer.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/clover/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/phpspec.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/phpunit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/spec/CachedAdapterSpec.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/src/CacheInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/src/CachedAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/src/Storage/AbstractCache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/src/Storage/Adapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/src/Storage/Memcached.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/src/Storage/Memory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/src/Storage/Noop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/src/Storage/PhpRedis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/src/Storage/Predis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/src/Storage/Psr6Cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/src/Storage/Stash.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/tests/AdapterCacheTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/tests/InspectionTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/tests/MemcachedTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/tests/MemoryCacheTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/tests/NoopCacheTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/tests/PhpRedisTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/tests/PredisTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/tests/Psr6CacheTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter/tests/StashTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/deprecations.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/AbstractAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/AbstractFtpAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/CanOverwriteFiles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Ftp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Ftpd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Local.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/NullAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Polyfill/NotSupportingVisibilityTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Polyfill/StreamedCopyTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Polyfill/StreamedReadingTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Polyfill/StreamedTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Polyfill/StreamedWritingTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/SynologyFtp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/AdapterInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/ConfigAwareTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/ConnectionErrorException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/ConnectionRuntimeException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Directory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/FileExistsException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/FileNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Filesystem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/FilesystemException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/FilesystemInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/FilesystemNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/InvalidRootException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/MountManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/NotSupportedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Plugin/AbstractPlugin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Plugin/EmptyDir.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Plugin/ForcedCopy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Plugin/ForcedRename.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Plugin/GetWithMetadata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Plugin/ListFiles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Plugin/ListPaths.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Plugin/ListWith.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Plugin/PluggableTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Plugin/PluginNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/PluginInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/ReadInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/RootViolationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/SafeStorage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/UnreadableFileException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Util.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Util/ContentListingFormatter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Util/MimeType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Util/StreamHasher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/mime-type-detection/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/mime-type-detection/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/mime-type-detection/src/EmptyExtensionToMimeTypeMap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/mime-type-detection/src/ExtensionMimeTypeDetector.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/mime-type-detection/src/ExtensionToMimeTypeMap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/mime-type-detection/src/FinfoMimeTypeDetector.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/mime-type-detection/src/GeneratedExtensionToMimeTypeMap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/league/mime-type-detection/src/MimeTypeDetector.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/cache/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/cache/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/cache/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/cache/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/cache/src/CacheException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/cache/src/CacheItemInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/cache/src/CacheItemPoolInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/cache/src/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/src/ContainerExceptionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/src/ContainerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/src/NotFoundExceptionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/AbstractLogger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LogLevel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerAwareInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerAwareTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/NullLogger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/DummyTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/TestLogger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/src/CacheException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/src/CacheInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/src/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Resources/unidata/lowerCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Resources/unidata/titleCaseRegexp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/bootstrap80.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/Php72.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php80/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php80/Php80.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php80/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php80/Resources/stubs/Attribute.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php80/Resources/stubs/Stringable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php80/Resources/stubs/ValueError.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php80/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php80/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/AmqpCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ArgsStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/Caster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ClassStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ConstStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/CutArrayStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/CutStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/DOMCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/DateCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/DoctrineCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/DsCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/DsPairStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/EnumStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ExceptionCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/FrameStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/GmpCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ImagineCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ImgStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/IntlCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/LinkStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/MemcachedCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/PdoCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/PgSqlCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ProxyManagerCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/RedisCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ReflectionCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ResourceCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/SplCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/StubCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/SymfonyCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/TraceStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/UuidCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/XmlReaderCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/XmlResourceCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/AbstractCloner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/ClonerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Cursor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/DumperInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Stub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/VarCloner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Command/Descriptor/CliDescriptor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Command/Descriptor/DumpDescriptorInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Command/Descriptor/HtmlDescriptor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Command/ServerDumpCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/AbstractDumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/CliDumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/ContextProvider/CliContextProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/ContextProvider/ContextProviderInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/ContextProvider/RequestContextProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/ContextualizedDumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/DataDumperInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/HtmlDumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/ServerDumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Exception/ThrowingCasterException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/bin/var-dump-server" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/css/htmlDescriptor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/functions/dump.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/js/htmlDescriptor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Server/Connection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Server/DumpServer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Test/VarDumperTestTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/VarDumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/lang/zh-cn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/App.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Container.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Cookie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Env.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Event.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Facade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Filesystem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Http.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Log.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Manager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Middleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Pipeline.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Response.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Service.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/Validate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/View.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/cache/Driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/cache/TagSet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/cache/driver/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/cache/driver/Memcache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/cache/driver/Memcached.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/cache/driver/Redis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/cache/driver/Wincache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/Input.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/Output.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/Table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/bin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/bin/hiddeninput.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/Clear.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/Help.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/Lists.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/Make.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/RouteList.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/RunServer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/ServiceDiscover.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/VendorPublish.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/Version.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/Event.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/Listener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/Middleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/Service.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/Subscribe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/Validate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/stubs/command.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/stubs/controller.api.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/stubs/controller.plain.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/stubs/controller.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/stubs/event.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/stubs/listener.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/stubs/middleware.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/stubs/model.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/stubs/service.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/stubs/subscribe.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/make/stubs/validate.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/optimize/Route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/command/optimize/Schema.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/input/Argument.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/input/Definition.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/input/Option.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/output/Ask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/output/Descriptor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/output/Formatter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/output/Question.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/output/descriptor/Console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/output/driver/Buffer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/output/driver/Console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/output/driver/Nothing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/output/formatter/Stack.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/output/formatter/Style.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/output/question/Choice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/console/output/question/Confirmation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/contract/CacheHandlerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/contract/LogHandlerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/contract/ModelRelationInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/contract/SessionHandlerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/contract/TemplateHandlerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/event/AppInit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/event/HttpEnd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/event/HttpRun.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/event/LogWrite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/event/RouteLoaded.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/exception/ClassNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/exception/ErrorException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/exception/FileException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/exception/FuncNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/exception/Handle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/exception/HttpException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/exception/HttpResponseException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/exception/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/exception/RouteNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/exception/ValidateException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/App.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Cookie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Env.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Event.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Filesystem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Log.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Middleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/Validate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/facade/View.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/file/UploadedFile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/filesystem/CacheStore.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/filesystem/Driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/filesystem/driver/Local.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/initializer/BootService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/initializer/Error.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/initializer/RegisterService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/log/Channel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/log/ChannelSet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/log/driver/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/log/driver/Socket.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/middleware/AllowCrossDomain.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/middleware/CheckRequestCache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/middleware/FormTokenCheck.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/middleware/LoadLangPack.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/middleware/SessionInit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/response/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/response/Html.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/response/Json.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/response/Jsonp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/response/Redirect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/response/View.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/response/Xml.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/route/Dispatch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/route/Domain.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/route/Resource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/route/Rule.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/route/RuleGroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/route/RuleItem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/route/RuleName.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/route/Url.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/route/dispatch/Callback.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/route/dispatch/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/route/dispatch/Url.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/service/ModelService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/service/PaginatorService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/service/ValidateService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/session/Store.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/session/driver/Cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/session/driver/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/validate/ValidateRule.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/think/view/driver/Php.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/src/tpl/think_exception.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/AppTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/CacheTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/ConfigTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/ContainerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/DbTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/EnvTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/EventTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/FilesystemTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/HttpTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/InteractsWithApp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/LogTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/MiddlewareTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/RouteTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/SessionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/ViewTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/framework/tests/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-helper/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-helper/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-helper/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-helper/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-helper/src/Collection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-helper/src/contract/Arrayable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-helper/src/contract/Jsonable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-helper/src/helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-helper/src/helper/Arr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-helper/src/helper/Str.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-multi-app/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-multi-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-multi-app/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-multi-app/src/MultiApp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-multi-app/src/Service.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-multi-app/src/Url.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-multi-app/src/command/Build.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-multi-app/src/command/Clear.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-multi-app/src/command/stubs/controller.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/DbManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/Paginator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/BaseQuery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/Builder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/CacheItem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/Connection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/ConnectionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/Fetch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/Mongo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/PDOConnection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/Query.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/Raw.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/Where.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/builder/Mongo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/builder/Mysql.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/builder/Oracle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/builder/Pgsql.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/builder/Sqlite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/builder/Sqlsrv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/concern/AggregateQuery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/concern/JoinAndViewQuery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/concern/ModelRelationQuery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/concern/ParamsBind.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/concern/ResultOperation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/concern/TableFieldInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/concern/TimeFieldQuery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/concern/Transaction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/concern/WhereQuery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/connector/Mongo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/connector/Mysql.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/connector/Oracle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/connector/Pgsql.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/connector/Sqlite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/connector/Sqlsrv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/connector/pgsql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/exception/BindParamException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/exception/DataNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/exception/DbException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/exception/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/exception/ModelEventException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/exception/ModelNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/db/exception/PDOException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/facade/Db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/Collection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/Pivot.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/Relation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/concern/Attribute.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/concern/Conversion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/concern/ModelEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/concern/OptimLock.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/concern/RelationShip.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/concern/SoftDelete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/concern/TimeStamp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/relation/BelongsTo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/relation/BelongsToMany.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/relation/HasMany.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/relation/HasManyThrough.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/relation/HasOne.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/relation/HasOneThrough.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/relation/MorphMany.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/relation/MorphOne.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/relation/MorphTo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/relation/MorphToMany.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/model/relation/OneToOne.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-orm/src/paginator/driver/Bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-template/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-template/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-template/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-template/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-template/src/Template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-template/src/facade/Template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-template/src/template/TagLib.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-template/src/template/driver/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-template/src/template/exception/TemplateNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-template/src/template/taglib/Cx.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-trace/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-trace/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-trace/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-trace/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-trace/src/Console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-trace/src/Html.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-trace/src/Service.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-trace/src/TraceDebug.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-trace/src/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-trace/src/tpl/page_trace.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-view/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-view/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-view/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-view/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-view/src/Think.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/controller/AdminBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/controller/AdminBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/middleware/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/middleware/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/GtSdk.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/GtSdk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/.gitignore" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,29 +577,31 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/topthink/framework" />
-      <path value="$PROJECT_DIR$/vendor/topthink/think-orm" />
-      <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
-      <path value="$PROJECT_DIR$/vendor/topthink/think-trace" />
-      <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
-      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter" />
-      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/topthink/framework" />
       <path value="$PROJECT_DIR$/vendor/topthink/think-multi-app" />
-      <path value="$PROJECT_DIR$/vendor/topthink/think-view" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/topthink/think-template" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-orm" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-view" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-trace" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mlz9mPljbzfWBC9FgvUv6LhTfI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -55,6 +609,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -165,11 +720,18 @@
       <workItem from="1612424097117" duration="1569000" />
       <workItem from="1612669491948" duration="1541000" />
       <workItem from="1612758457359" duration="5926000" />
+      <workItem from="1612939948575" duration="59000" />
+      <workItem from="1613448190414" duration="134000" />
+      <workItem from="1613561866706" duration="503000" />
+      <workItem from="1613721075220" duration="77000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="14" width="686" height="795" key="#AppTest.testService" timestamp="1612404569938">
@@ -228,14 +790,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1611557168814" />
-    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1612186445152">
+    <state x="-329" y="114" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1613448324304">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1612186445152" />
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1612424096926">
+    <state x="-329" y="114" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1613448324304" />
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1613721079549">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1612424096926" />
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1613721079549" />
     <state x="303" y="47" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611035851447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
